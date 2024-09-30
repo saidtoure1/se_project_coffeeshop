@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Coffee shop webpage" />
     <meta name="author" content="Marina Barsegyan" />
-    <meta name="keywords" content="Coffee, Library, Shop" />
+    <meta
+      name="keywords"
+      content="library coffee shop, coffee in library, library cafe, book and coffee, study cafe"
+    />
     <title>Coffee Shop</title>
     <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
@@ -20,23 +23,99 @@
   <body>
     <div class="page">
       <header class="header">
-        <h1 class="header__title"></h1>
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Coffeeshop logo"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li>
+              <a href="" class="nav__link">Recipes</a>
+            </li>
+            <li>
+              <a href="" class="nav__link">Book a table</a>
+            </li>
+            <li>
+              <a href="" class="nav__link">Menu</a>
+            </li>
+            <li>
+              <a href="" class="nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <h1 class="header__title">
+          <span class="header__span-accent">Specialty coffee</span> in the
+          Triple Peaks Library
+        </h1>
+        <p class="header__description">
+          Welcome to our study zone! We've got the coffee to energize you and
+          the cozy vibes to help you get creative.
+        </p>
         <img
           src="./images/inside_coffee_shop.png"
-          alt="Inside Triple Peak Coffee Shop"
+          alt="Illustration of a coffee shop"
+          class="header__image"
         />
-        <p class="header__welcome"></p>
-        <div class="header__column">
-          <p class="header__column-heading"></p>
-          <ul class="header__list">
-            <li class="header__list header__list_item"></li>
-            <li class="header__list header__list_item"></li>
-          </ul>
+        <div class="header__footer">
+          <div>
+            <p class="header__paragraph">Hours</p>
+            <p class="header__paragraph">
+              Monday &ndash; Friday (10:00 - 19:00)
+            </p>
+            <p class="header__paragraph">
+              Saturday &dash; Sunday (11:00 - 18:00)
+            </p>
+          </div>
+          <p class="header__paragraph">
+            200 Success Avenue, The Town of Triple Peaks
+          </p>
         </div>
-        <div class="header__footer"></div>
       </header>
       <main class="content">
-        <section class="recipes"></section>
+        <section class="recipes">
+          <h2 class="recipes__title">Recipes</h2>
+          <p class="recipes__subtitle">
+            Check out some recipes we've collected for your home-brewing
+            covenience:
+          </p>
+          <ul class="recipes__videos">
+            <li>
+              <div class="recipes_iframe">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/j6VlT_jUVPc?si=iv9_BNpdNy2zf5vz"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <p class="recipes__video-caption">
+                  <span>Aeropress recipe</span> <span>~5 min</span>
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="recipes_iframe">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/st571DYYTR8?si=GfndxFJSYjFeEZ1c"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <p class="recipes__video-caption">
+                  <span>French press recipe</span> <span>~15 min</span>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
         <section class="reservation"></section>
         <section class="menu"></section>
         <section class="about"></section>
