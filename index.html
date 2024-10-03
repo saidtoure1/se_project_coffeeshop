@@ -97,8 +97,6 @@
             </li>
             <li>
               <iframe
-                width="560"
-                height="315"
                 class="recipes__iframe"
                 src="https://www.youtube.com/embed/st571DYYTR8?si=GfndxFJSYjFeEZ1c"
                 title="YouTube video player"
@@ -112,7 +110,59 @@
             </li>
           </ul>
         </section>
-        <section id="reservation" class="reservation"></section>
+        <section id="reservation" class="reservation">
+          <h2 class="reservation__title">Book a table</h2>
+          <form class="reservation__form form">
+            <fieldset class="form__fieldset">
+              <label for="input-name" class="form__label">
+                Name *
+                <input
+                  class="form__input"
+                  id="input-name"
+                  type="text"
+                  placeholder="Name Surname"
+                  required
+                />
+              </label>
+              <label for="input-guests" class="form__label">
+                Number of guests *
+                <input
+                  class="form__input"
+                  id="input-guests"
+                  type="number"
+                  min="1"
+                  max="8"
+                  placeholder="1-8"
+                  required
+                />
+              </label>
+              <label for="input-date" class="form__label">
+                Date & time *
+                <input
+                  class="form__input"
+                  id="input-date"
+                  type="datetime-local"
+                  required
+                />
+              </label>
+              <label for="input-email" class="form__label">
+                Your email *
+                <input
+                  class="form__input"
+                  id="input-email"
+                  type="email"
+                  placeholder="email@email.com"
+                  required
+                />
+              </label>
+            </fieldset>
+            <button class="form__button">Book a table</button>
+            <label for="checkbox" class="form__label form__label_type_checkbox">
+              <input class="form__checkbox" id="checkbox" type="checkbox" />
+              I agree with the terms of use
+            </label>
+          </form>
+        </section>
         <section id="menu" class="menu"></section>
         <section id="about" class="about"></section>
       </main>
