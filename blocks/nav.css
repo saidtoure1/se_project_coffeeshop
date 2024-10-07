@@ -15,7 +15,12 @@
   line-height: 20px;
 }
 
-.nav__links:hover {
+.nav__link {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav__link:hover {
   opacity: 50%;
   transition: 0.3s ease;
 }
